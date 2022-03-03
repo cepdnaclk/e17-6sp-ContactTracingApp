@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "ContactTracingApp",
+    "slug": "ContactTracingApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
