@@ -38,6 +38,7 @@ As a solution, we are proposing to build  a contact tracing mobile application a
 We are planing to use both bluetooth and GPS to track down the contacts of the infected person.
 
 To trace the close contacts Bluetooth is used.
+<img src = "docs/images/BLUE_OVERVIEW.png" width="300">
 To track the whereabouts (History of the locations visited) of the infected person GPS is used.
 
 Using this GPS data, a proper dataset is created. Then this data set will be processed using data mining and machine learning techniques to provide the users with HIGH RISK ZONES on a map , Future predictions of the spread of the disease.
