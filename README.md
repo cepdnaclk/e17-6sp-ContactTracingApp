@@ -32,10 +32,13 @@ PROBLEMS RELATED WITH Chronic Kidney Disease/CKDu  ( Non-Communicable)
 - No efficient way to identify disease spreading hotspots/areas by the general public .
 
 
-## Proposed System
 
 As a solution, we are proposing to build  a contact tracing mobile application as well as a web application.
 We are planing to use both bluetooth and GPS to track down the contacts of the infected person.
+
+## Solution Overview
+
+### COVID19
 
 To trace the close contacts Bluetooth is used.
 
@@ -46,11 +49,13 @@ To trace the close contacts Bluetooth is used.
 To track the whereabouts (History of the locations visited) of the infected person GPS is used.
 
 
+<img src = "docs/images/gps_OVERVIEW.png" width="600">
+
 
 Using this GPS data, a proper dataset is created. Then this data set will be processed using data mining and machine learning techniques to provide the users with HIGH RISK ZONES on a map , Future predictions of the spread of the disease.
 
 
-<img src = "docs/images/gps_OVERVIEW.png" width="600">
+
 
 ---
 
