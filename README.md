@@ -21,15 +21,15 @@ Title: CONTACT TRACING APP
 ## Problem Overview
 PROBLEMS RELATED WITH COVID-19 ( Communicable disease )
 
-Inefficiency to trace the close contacts of an infected person manually.
-Not being able to know whether you've been in contact with an infected person.
-Lack of options to know whether a public place was visited by an infected person recently.
+- Inefficiency to trace the close contacts of an infected person manually.
+- Not being able to know whether you've been in contact with an infected person.
+- Lack of options to know whether a public place was visited by an infected person recently.
 
 PROBLEMS RELATED WITH Chronic Kidney Disease/CKDu  ( Non-Communicable)
 
-Lack of awareness
-Difficulty in manually sorting  data to identify the spreading rates and trends.
-No efficient way to identify disease spreading hotspots/areas by the general public .
+- Lack of awareness
+- Difficulty in manually sorting  data to identify the spreading rates and trends.
+- No efficient way to identify disease spreading hotspots/areas by the general public .
 
 
 ## Proposed System
