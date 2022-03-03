@@ -71,7 +71,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 ## Team
 -  E/17/005, M.I Rishard , [e17005@eng.pdn.ac.lk](mailto:name@email.com)
 -  E/17/379, S.P.D.D.S WEERASINGHE [e17379@eng.pdn.ac.lk](mailto:name@email.com)
--  E/17/327, A.M.F SHALHA, [e17380@eng.pdn.ac.lk](mailto:name@email.com)
+-  E/17/327, A.M.F SHALHA, [e17327@eng.pdn.ac.lk](mailto:name@email.com)
 
 
 
