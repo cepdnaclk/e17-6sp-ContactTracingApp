@@ -62,7 +62,7 @@ This dataset is then subjected to data mining and using machine learning techniq
 users are alerted when they enter a high risk zone and predictions are made for the third party authorities so that necessary precautions can be made to minimize the spread.
 
 
-<img src = "docs/images/ckdu_OVERVIEW.png" width="600">
+<img src = "docs/images/ckduOVERVIEW.png" width="600">
 
 
 ---
