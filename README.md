@@ -55,6 +55,14 @@ To track the whereabouts (History of the locations visited) of the infected pers
 Using this GPS data, a proper dataset is created. Then this data set will be processed using data mining and machine learning techniques to provide the users with HIGH RISK ZONES on a map , Future predictions of the spread of the disease.
 
 
+### Chronic kidney disease
+
+Data of the infected people are uploaded by the health officials.
+This dataset is then subjected to data mining and using machine learning techniques,
+users are alerted when they enter a high risk zone and predictions are made for the third party authorities so that necessary precautions can be made to minimize the spread.
+
+
+<img src = "docs/images/ckdu_OVERVIEW.png" width="600">
 
 
 ---
