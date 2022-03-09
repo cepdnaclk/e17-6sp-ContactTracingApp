@@ -29,5 +29,5 @@ router.post('/authenticate', actions.authenticate)
 //@route GET /getinfo
 router.get('/getinfo', actions.getinfo)
 router.get('/getallLocations', actions.getallLocations)
-
+router.get('/covidUpdates', actions.getNumberofCasesCovid)
 module.exports = router
