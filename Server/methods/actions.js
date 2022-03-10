@@ -2,6 +2,7 @@
 //add data to db
 var User = require('../models/user')
 var gpsSchema=require('../models/gps')
+var covidUpdatesSchema=require('../models/covidUpdates')
 var jwt = require('jwt-simple')
 var config = require('../config/dbconfig');
 const { exists } = require('../models/user');
@@ -90,6 +91,8 @@ var functions = {
         
     },
     authenticate: function (req, res) {
+        console.log(req.body.email)
+        console.log(req.body.password)
         User.findOne({ //find user name  ---  "User" is a object from user.js
             email: req.body.email
         }, function (err, user) {
@@ -127,14 +130,24 @@ var functions = {
     },
 
     getallLocations:function(req,res){
-      gpsSchema.find().select("lat lon")
+      gpsSchema.find().select("lat lon unique_id")
         
         .then((locations)=>{
            res.status(200).json({Alllocations:locations})
        })
        .catch(err=>console.log(err));
-   }
+   },
+   getNumberofCasesCovid:function(req,res){
+    covidUpdatesSchema.find().select("Confirmed Recovered Deaths")
+      
+      .then((NumberofCases)=>{
+         res.status(200).json({Count:NumberofCases})
+     })
+     .catch(err=>console.log(err));
+  
 }
+}
+
 
 module.exports = functions // to use in elsewhere
 
