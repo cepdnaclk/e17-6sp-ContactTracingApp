@@ -9,8 +9,10 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
-
-export default function covidsel({ navigation }) {
+import CKDuPredictions from './CKDuPredictions';
+import CKDuMap from './CKDuMap';
+//import { withNavigation } from 'react-navigation/native';
+export default function Covidsel({ navigation }) {
   
   
   return (
@@ -19,22 +21,29 @@ export default function covidsel({ navigation }) {
     <Text style={{
       color: 'white',
       fontFamily: 'Nunito-ExtraBoldItalic',
-      fontSize:20
+      fontSize:22
     }}>Upload location history</Text>
     </TouchableOpacity>
     
-    <TouchableOpacity style={styles.loginBtn}>
+    <TouchableOpacity 
+     onPress={
+          () =>{ navigation.navigate('CovidMap');}}
+    style={styles.loginBtn}>
     <Text  style={{
       color: 'white',
       fontFamily: 'Nunito-ExtraBoldItalic',
-      fontSize:20
+      fontSize:22
     }}>High risk zones </Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.loginBtn}>
+    <TouchableOpacity 
+    
+    onPress={
+      () =>{ navigation.navigate('CovidPredictions');}}
+    style={styles.loginBtn}>
     <Text  style={{
       color: 'white',
       fontFamily: 'Nunito-ExtraBoldItalic',
-      fontSize:20
+      fontSize:22
     }}>Future predictions</Text>
     </TouchableOpacity>
     </View>
@@ -44,7 +53,7 @@ export default function covidsel({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#fff",
+      backgroundColor: "#f6b1a7ff",
       alignItems: "center",
       justifyContent: "center",
     },
@@ -76,7 +85,7 @@ export default function covidsel({ navigation }) {
     },
     
     loginBtn: {
-      width: "50%",
+      width: "70%",
       borderRadius: 25,
       height: "10%",
       alignItems: "center",

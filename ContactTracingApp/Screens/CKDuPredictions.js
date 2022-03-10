@@ -3,10 +3,8 @@ import * as React from 'react';
 import { StyleSheet, Text, View, Dimensions,StatusBar,} from 'react-native';
 import {Component } from 'react';
 
-//import AppLoading from 'expo-app-loading';
 import {
     LineChart,
-
     PieChart,
 
   } from "react-native-chart-kit";
@@ -31,7 +29,7 @@ constructor(props) {
   .then(res => res.json()
   )
   .then(data => {
-  //console.log(  data.Count[0].Confirmed)
+ 
 this.setState({ data1: data.Count[0].Confirmed})
 this.setState({ data2: data.Count[0].Deaths})
  this.setState({ data3: data.Count[0].Recovered})
@@ -42,14 +40,13 @@ this.setState({ data2: data.Count[0].Deaths})
 
 }
 
-
   render() {
     
 
     return (
       <View style={styles.container}>
       <StatusBar backgroundColor='#ff6b65' barStyle="light-content"/>
-      <Text style={styles.textStyle}>COVID 19 Updates</Text>
+      <Text style={styles.textStyle}>CKDu Upates</Text>
    
         
 <PieChart

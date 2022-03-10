@@ -18,13 +18,11 @@ export default function SplashScreen({navigation}) {
         <View style={styles.container}>
         <StatusBar backgroundColor='#f6b1a7ff' barStyle="light-content"/>
         <View style={styles.header}>
-        <Text style={[styles.hText, {
-            fontFamily: 'Nunito-ExtraBoldItalic'
-        }]}>Tracey</Text>
+      
         <Animatable.Image
         //delay={1500}
         animation={"bounceIn"}
-        //source={require('../assets/quarantine-icon.png')}
+       // source={require('../assets/logo2.png')}
         style={styles.logo}
         resizeMode='stretch'
         />
@@ -36,10 +34,9 @@ export default function SplashScreen({navigation}) {
         <Text style={[styles.title, {
             fontFamily: 'Nunito-ExtraBoldItalic'
         }]}>Trace together for a safer Sri Lanka.</Text>
-        <Text style={styles.text}>Sign in here</Text>
         <View style={styles.button}>
         <TouchableOpacity
-        onPress={()=>navigation.navigate('CovidMap')}
+        onPress={()=>navigation.navigate('SignIn')}
         style={[styles.signin, {
             backgroundColor: '#ff6b65',
             borderColor:'#ff6b65',
@@ -51,7 +48,8 @@ export default function SplashScreen({navigation}) {
         <Text
         style={{
             color: 'white',
-            fontFamily: 'Nunito-ExtraBoldItalic'
+            fontFamily: 'Nunito-ExtraBoldItalic',
+            fontSize:18
         }}
         >Get Started</Text>
         {/* chevron-double-right */}
@@ -92,8 +90,8 @@ export default function SplashScreen({navigation}) {
             //fontFamily: 'Nunito-ExtraBoldItalic',
         },
         logo: {
-            width: heightLogo,
-            height:heightLogo,
+            width:250,
+            height:250,
         },
         title: {
             color: '#05375a',
