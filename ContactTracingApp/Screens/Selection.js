@@ -10,13 +10,13 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
-import covidsel from './covidsel';
-import ckdusel from './ckdusel';
+import Covidsel from './Covidsel';
+import Ckdusel from './Ckdusel';
 export default function Selection({ navigation }) {
   return (
     <View style={styles.container}>
     <TouchableOpacity 
-    onPress={()=>navigation.navigate('covidsel')}
+    onPress={()=>navigation.navigate('Covidsel')}
     style={styles.loginBtn}
     >
     <Text  style={{
@@ -33,7 +33,7 @@ export default function Selection({ navigation }) {
       fontFamily: 'Nunito-ExtraBoldItalic',
       fontSize:25
     }}
-    onPress={()=>navigation.navigate('ckdusel')}
+    onPress={()=>navigation.navigate('Ckdusel')}
     >CKDu</Text>
     </TouchableOpacity>
     </View>
@@ -43,7 +43,7 @@ export default function Selection({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#fff",
+      backgroundColor: "#f6b1a7ff",
       alignItems: "center",
       justifyContent: "center",
     },

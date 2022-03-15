@@ -78,7 +78,7 @@ export default function SignUp({navigation}) {
     }
 
     const SignUp = ()=>{
-        fetch("http://localhost:5000/adduser",{
+        fetch("http://10.0.2.2:5000/adduser",{
           method:'POST',
           headers:{
               'Content-Type':'application/json'
