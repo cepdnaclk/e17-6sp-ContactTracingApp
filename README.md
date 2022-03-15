@@ -119,24 +119,27 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 #### Dataset : Userdetails with covid status/CKDu status
 
-#####Communicable
+##### Communicable
+
 -GPS coordinates of the user gathered every 15 seconds.
 -Bluetooth UUIDs of the close contacts of the user.
-#####Non-Communicable
+
+
+##### Non-Communicable
 -Locations of infected personals with infected recovered and death rates.
 
 #### Proposed Mode of Data Collection :
 
 Covid/CKDu status : Upon signing Up to the mobile app and routine questionnaires in case of close contact detection
 
-#####Communicable
+##### Communicable
 
 -Mobile Application collects the geo coordinates 
 of the user in the foreground every 15 secs
 
 -Mobile App collects the Bluetooth UUIDs when another device with the app comes in close proximity
 
-#####Non-communicable
+##### Non-communicable
 
 -PHI updates the infected,recovered and death counts with locations on a certain routine.
 
