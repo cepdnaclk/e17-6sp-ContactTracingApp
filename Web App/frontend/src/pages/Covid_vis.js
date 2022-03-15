@@ -13,7 +13,7 @@ import '../components/Navbarnew';
 import { Navbarnew } from '../components/Navbarnew';
 
 
-export const Home = (props) => {
+export const Covid_vis = (props) => {
   // History hook
   const history = useHistory();
 
@@ -69,32 +69,21 @@ export const Home = (props) => {
   return (
     <>
     <div className='container'>
-    <h1   >Home</h1>
+    <h1   >COVID Visualisations</h1>
     <Container className="mt-4">
         <Row>
           <Col className="mt-4">
-            <h2>Welcome {user.firstName}!</h2>
-            <Alert variant={'primary'}>Contact Tracing App</Alert>
-          </Col>
-        </Row>
-      </Container>
-      <Container className="mt-4">
-        <Row>
-          <Col className="mt-4">
-            <h2>News Feeds </h2>
-            <Alert variant={'primary'}>Contact tracing slows the spread of COVID-19</Alert>
-            <ul>
-              <li>Helping people diagnosed with COVID-19 get referrals for services and resources they may need to safely isolate.</li>
-              <li>Notifying people who have come into close contact with someone diagnosed with COVID-19 and helping them determine what steps to take, depending on their vaccination status and history of prior infection with SARS-CoV-2 (the virus that causes COVID-19). Follow-up may include testing, quarantine, and wearing a well-fitted mask.</li>
-              <li>Discussions with public health workers are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your healthcare provider.</li>
-            </ul>
+            <h2>Welcome !</h2>
+            <Alert variant={'primary'}>Covid19 Variation with Date</Alert>
+            <iframe style={{background: "#FFFFFF"}} width="1200" height="800" src="https://charts.mongodb.com/charts-contacttracingapplication-nwmba/embed/charts?id=62309b64-9853-47e0-8a44-03d74a95662d&maxDataAge=3600&theme=light&autoRefresh=true"></iframe>
+            <Alert variant={'primary'}>Covid19 Variation with Date</Alert>
+            <iframe style={{background: "#FFFFFF"}} width="1200" height="800" src="https://charts.mongodb.com/charts-contacttracingapplication-nwmba/embed/charts?id=6230a40b-56bd-4de4-8568-d8c93e28130b&maxDataAge=3600&theme=light&autoRefresh=true"></iframe>
           </Col>
         </Row>
       </Container>
     </div>
-      
     </>
   );
 };
 
-export default Home
+export default Covid_vis
