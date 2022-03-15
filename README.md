@@ -113,7 +113,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 ## MACHINE LEARNING WORKFLOW
 
-<img src = "docs/images/MI.png" width="600">
+
 
 ### 1.Data Gathering
 
