@@ -64,6 +64,95 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 <img src = "docs/images/ckduOVERVIEW.png" width="600">
 
+## Requirements
+
+### Functional Requirements
+
+-Administrative functions -Authorities have to login before using the web application to track user details 
+-User Authentication -Users have to register before using the mobile application
+-Permissions-Users should allow the application to track GPS and Bluetooth data
+-Features
+    -Users should update the covid status when the user is tested positive for the disease
+    -Alert notifications 
+    -User Questionnaires
+
+### Non-Functional Requirements
+
+-Usability
+-Responsive user friendly features
+-Reliability
+    -Mobile application tracks user locations for every 15 seconds
+-Performance
+    -Realtime updates of maps and charts
+    
+## UML Class Diagram
+
+<img src = "docs/images/UML.png" width="600">
+
+## Use case Diagrams
+
+### Mobile app
+
+<img src = "docs/images/uc-app.png" width="600">
+
+### Web app
+
+<img src = "docs/images/uc-web.png" width="600">
+
+## Machine Learning Proposal
+
+### Communicable
+
+-Based on the covid infection,recovery and death counts prediction in trends are made   (Forecast)
+-Based on Geo-locations Hotspot identification and spreading rates are identified.
+-Based on bluetooth data cluster formation and spread of the cluster is predicted.
+
+### Non-Communicable
+
+-Based on the infected , recovered and death counts of specific locations the trend in spread is predicted
+
+## MACHINE LEARNING WORKFLOW
+
+
+<img src = "docs/images/MI.png" width="600">
+
+
+### 1.Data Gathering
+
+#### Dataset : Userdetails with covid status/CKDu status
+
+##### Communicable
+
+-GPS coordinates of the user gathered every 15 seconds.
+-Bluetooth UUIDs of the close contacts of the user.
+
+
+##### Non-Communicable
+-Locations of infected personals with infected recovered and death rates.
+
+#### Proposed Mode of Data Collection :
+
+Covid/CKDu status : Upon signing Up to the mobile app and routine questionnaires in case of close contact detection
+
+##### Communicable
+
+-Mobile Application collects the geo coordinates 
+of the user in the foreground every 15 secs
+
+-Mobile App collects the Bluetooth UUIDs when another device with the app comes in close proximity
+
+##### Non-communicable
+
+-PHI updates the infected,recovered and death counts with locations on a certain routine.
+
+
+
+
+
+
+
+
+
 
 ---
 
