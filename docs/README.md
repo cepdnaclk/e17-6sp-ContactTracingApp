@@ -20,18 +20,18 @@ title:
 
 ## Table of Contents
 
-  1. [Introduction](introduction)
-  2. [Problem Overview](#problem-overview)
-  3. [Solution Overview](#solution-overview)
-  4. [Solution Architecture](#solution-architecture)
-  5. [Data Flow](#data-flow)
-  6. [Requirements Analysis](#requirements-analysis)
-  7. [UML Class Diagram](#uml-class-diagram)
-  8. [Use Case Diagrams](#use-case-diagrams)
-  9. [Machine Learning Proposal](#machine-learning-proposal)
-  10. [Machine Learning Workflow](#machine-learning-workflow)
-   [Team](#team)
-   [Links](#links)
+  1. [Introduction](#1.introduction)
+  2. [Problem Overview](#2.problem-overview)
+  3. [Solution Overview](#3.solution-overview)
+  4. [Solution Architecture](#4.solution-architecture)
+  5. [Data Flow](#5.data-flow)
+  6. [Requirements Analysis](#6.requirements-analysis)
+  7. [UML Class Diagram](#7.uml-class-diagram)
+  8. [Use Case Diagrams](#8.use-case-diagrams)
+  9. [Machine Learning Proposal](#9.machine-learning-proposal)
+  10. [Machine Learning Workflow](#10.machine-learning-workflow)
+   - [Team](#team)
+   - [Links](#links)
 
 ---
 
