@@ -68,6 +68,11 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 <img src = "docs/images/SolutionArchitecture.png" width="600">
 
+
+## Data Flow
+
+<img src = "docs/images/dataflow.png" width="600">
+
 ## Requirements
 
 ### Functional Requirements
@@ -118,7 +123,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 ## MACHINE LEARNING WORKFLOW
 
 
-<img src = "docs/images/MI.png" width="600">
+<img src = "docs/images/Ml.png" width="600">
 
 
 ### 1.Data Gathering
