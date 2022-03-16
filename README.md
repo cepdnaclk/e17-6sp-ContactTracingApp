@@ -95,6 +95,7 @@ System should be able to trace close contacts of an infected person.
 #### Usability
 
     - Responsive user friendly features
+    - Responsive user friendly features
     
 #### Reliability
 
