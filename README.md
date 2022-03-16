@@ -14,7 +14,7 @@ Title: CONTACT TRACING APP
 - [CONTACT TRACING APP](#CONTACT-TRACING-APP)
   - [Table of Contents](#table-of-contents)
   - [Problem Overview](#problem-overview)
-  - [Proposed System](#proposed-system)
+  - [Proposed System](#solution-overview)
   - [Team](#team)
   - [Links](#links)
 
