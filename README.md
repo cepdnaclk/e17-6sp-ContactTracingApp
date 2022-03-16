@@ -132,35 +132,10 @@ System should be able to trace close contacts of an infected person.
 
 
 <img src = "docs/images/MLworkflow.png" width="600">
-
-
-### 1.Data Gathering
-
-#### Dataset : Userdetails with covid status/CKDu status
-
-##### Communicable
-
-- GPS coordinates of the user gathered every 15 seconds.
-- Bluetooth UUIDs of the close contacts of the user.
-
-
-##### Non-Communicable
-- Locations of infected personals with infected recovered and death rates.
-
-#### Proposed Mode of Data Collection :
-
-Covid/CKDu status : Upon signing Up to the mobile app and routine questionnaires in case of close contact detection
-
-##### Communicable
-
-- Mobile Application collects the geo coordinates 
-of the user in the foreground every 15 secs
-
-- Mobile App collects the Bluetooth UUIDs when another device with the app comes in close proximity
-
-##### Non-communicable
-
-- PHI updates the infected,recovered and death counts with locations on a certain routine.
+<img src = "docs/images/1.png" width="600">
+<img src = "docs/images/2.png" width="600">
+<img src = "docs/images/3.png" width="600">
+<img src = "docs/images/4.png" width="600">
 
 
 
