@@ -96,7 +96,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
     
 ## UML Class Diagram
 
-<img src = "docs/images/UML.png" width="600">
+<img src = "docs/images/UMLC.png" width="600">
 
 ## Use case Diagrams
 
