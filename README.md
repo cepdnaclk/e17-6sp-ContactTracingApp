@@ -102,11 +102,11 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 ### Mobile app
 
-<img src = "docs/images/uc-app.png" width="600">
+<img src = "docs/images/uc-app2.png" width="600">
 
 ### Web app
 
-<img src = "docs/images/uc-web.png" width="600">
+<img src = "docs/images/uc-web2.png" width="600">
 
 ## Machine Learning Proposal
 
@@ -123,7 +123,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 ## MACHINE LEARNING WORKFLOW
 
 
-<img src = "docs/images/Ml.png" width="600">
+<img src = "docs/images/MLworkflow.png" width="600">
 
 
 ### 1.Data Gathering
