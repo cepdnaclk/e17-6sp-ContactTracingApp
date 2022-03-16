@@ -63,7 +63,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 
 <img src = "docs/images/ckduOVERVIEW.png" width="600">
-
+## Solution Architecture
 ## Requirements
 
 ### Functional Requirements
