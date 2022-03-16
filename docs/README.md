@@ -95,6 +95,19 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 <img src = "images/dataflow.png" width="600">
 
+## Mobile App Demo
+
+<img src = "images/My-Video.gif" width="400" height="600">
+
+## GPS tracking
+
+<img src = "images/blutrac.gif" width="1000" height="500">
+
+## Web App Demo
+
+<img src = "images/web-gif.gif" width="1000" height="500">
+
+
 ## 6.Requirements Analysis
 
 ### 6.1.Functional Requirements
@@ -126,7 +139,8 @@ System should be able to trace close contacts of an infected person.
     
 ## 7.UML Class Diagram
 
-<img src = "images/UMLC.png" width="600">
+<img src = "images/UMLC.png" width="600" >
+
 
 ## 8.Use case Diagrams
 
