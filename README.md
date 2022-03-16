@@ -110,11 +110,11 @@ System should be able to trace close contacts of an infected person.
 
 ### Mobile app
 
-<img src = "docs/images/uc-app2.png" width="600">
+<img src = "docs/images/uc-app.png" width="600">
 
 ### Web app
 
-<img src = "docs/images/uc-web2.png" width="600">
+<img src = "docs/images/uc-web.png" width="600">
 
 ## Machine Learning Proposal
 
