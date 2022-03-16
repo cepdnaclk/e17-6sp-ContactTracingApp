@@ -93,11 +93,11 @@ System should be able to trace close contacts of an infected person.
 ### Non-Functional Requirements
 
 #### Usability
-    - Responsive user friendly features
+    -Responsive user friendly features
 #### Reliability
-    - Mobile application tracks user locations for every 15 seconds
+    -Mobile application tracks user locations for every 15 seconds
 #### Performance
-    - Realtime updates of maps and charts
+    -Realtime updates of maps and charts
     
 ## UML Class Diagram
 
