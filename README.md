@@ -96,7 +96,7 @@ System should be able to trace close contacts of an infected person.
 - Responsive user friendly UI
     
 #### Reliability
-Tracks user locations for every 15 seconds
+- Tracks user locations for every 15 seconds
   
 #### Performance
 - Realtime updates of maps and charts
