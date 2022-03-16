@@ -66,6 +66,7 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 ## Solution Architecture
 
+<img src = "docs/images/SolutionArchitecture.png" width="600">
 
 ## Requirements
 
