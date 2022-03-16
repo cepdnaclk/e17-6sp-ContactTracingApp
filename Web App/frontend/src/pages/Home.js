@@ -4,6 +4,14 @@ import { Navbar, Container, Row, Col, Alert, Button } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/fa';
 import auth from '../auth/auth';
 import list from '../data/list'
+import { Link } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { SidebarData } from '../components/Sidebardata';
+import '../components/Navbar.css';
+import '../components/Navbarnew';
+import { Navbarnew } from '../components/Navbarnew';
+
 
 export const Home = (props) => {
   // History hook
@@ -56,45 +64,37 @@ export const Home = (props) => {
       history.push('/');
     });
   };
-  
+
+
   return (
     <>
-      <Navbar className="align-middle justify-content-between" bg="dark" variant="dark">
-        <div>
-          <Navbar.Brand href="/">
-            <img
-              alt=""
-              src={require("../images/logo.svg")}
-              width="40"
-              height="40"
-              className="d-inline-block align-top"
-            />
-            <Navbar.Brand><strong>Project</strong></Navbar.Brand>
-          </Navbar.Brand>
-        </div>
-        <div>
-          <label className="ml-4 text-white" style={{}}><FaUserCircle size={21}/></label>
-          <label className="ml-4 text-white">{user.firstName+" "+user.lastName+dataset.Deaths}</label>
-          <Button className="ml-4" variant="outline-light" onClick={callLogout}>Log Out</Button>
-        </div>
-      </Navbar>
-      <Container className="mt-4">
+    <div className='container'>
+    <h1   >Home</h1>
+    <Container className="mt-4">
         <Row>
           <Col className="mt-4">
             <h2>Welcome {user.firstName}!</h2>
-            <Alert variant={'primary'}>You have been successfully authenticated.</Alert>
+            <Alert variant={'primary'}>Contact Tracing App</Alert>
           </Col>
         </Row>
       </Container>
-
-      <div class="card" >
-  
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <Container className="mt-4">
+        <Row>
+          <Col className="mt-4">
+            <h2>News Feeds </h2>
+            <Alert variant={'primary'}>Contact tracing slows the spread of COVID-19</Alert>
+            <ul>
+              <li>Helping people diagnosed with COVID-19 get referrals for services and resources they may need to safely isolate.</li>
+              <li>Notifying people who have come into close contact with someone diagnosed with COVID-19 and helping them determine what steps to take, depending on their vaccination status and history of prior infection with SARS-CoV-2 (the virus that causes COVID-19). Follow-up may include testing, quarantine, and wearing a well-fitted mask.</li>
+              <li>Discussions with public health workers are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your healthcare provider.</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+      
     </>
   );
 };
+
+export default Home

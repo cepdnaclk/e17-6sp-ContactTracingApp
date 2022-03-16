@@ -16,12 +16,13 @@ import * as Animatable from 'react-native-animatable';
 
 //import Users from '../Model/users';
 import Selection from './Selection';
+import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 //import { AuthContext } from '../components/context';
 
 export default function SignIn({navigation}) {
     const [data, setData] = useState({
-        username: '',
+       email: '',
         password: '',
         checkTextInputChange: false,
         secureTextEntry: true,
@@ -37,14 +38,14 @@ export default function SignIn({navigation}) {
         if (val.trim().length >= 4) {
             setData({
                 ...data,
-                username: val,
+                email: val,
                 checkTextInputChange: true,
                 isValidUser: true
             });
         } else {
             setData({
                 ...data,
-                username: val,
+                email: val,
                 checkTextInputChange: false,
                 isValidUser: false
             });
@@ -92,11 +93,11 @@ export default function SignIn({navigation}) {
         }
     }
 
-    const loginHandle = (userName, password) => {
+    const loginHandle = (email, password) => {
         const foundUser = Users.filter(item => {
-            return userName == item.username && password == item.password;
+            return email == item.email && password == item.password;
         });
-        if (data.username.length == 0 || data.password.length == 0) {
+        if (data.email.length == 0 || data.password.length == 0) {
             Alert.alert('Wrong Input!', 'Username and password fields cannot be empty.', [
                 { text: 'Okay' }
             ]);
@@ -112,7 +113,7 @@ export default function SignIn({navigation}) {
     }
 
     const SignIn = ()=>{
-        fetch("http://localhost:5000/authenticate",{
+        fetch("http://10.0.2.2:5000/authenticate",{
           method:'POST',
           headers:{
               'Content-Type':'application/json'
@@ -120,13 +121,24 @@ export default function SignIn({navigation}) {
           body:JSON.stringify({
             email:data.email,
             password: data.password ,
-           
 
 
           })
-        }).then(res=>res.json())
+        }).then(res=>res.json()
+    
+        )
         .then(data=>{
             console.log(data)
+            if(data.success==true){
+              navigation.navigate('Selection');
+
+            }
+            else{
+                Alert.alert('Invalid User!', 'Username or password is incorrect.', [
+                    { text: 'Okay'}
+                ]);
+                return;
+            }
 
         })
     }
@@ -134,7 +146,7 @@ export default function SignIn({navigation}) {
 
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor='#009387' barStyle="light-content"/>
+            <StatusBar backgroundColor='#ff6b65' barStyle="light-content"/>
             <View style={styles.header}>
                 <Text style={[styles.textHeader, {
                     fontFamily: 'Nunito-ExtraBoldItalic'
@@ -144,7 +156,7 @@ export default function SignIn({navigation}) {
             <Animatable.View
                 animation={"fadeInUpBig"}
                 style={styles.footer}>
-                <Text style={styles.textFooter}>Username</Text>
+                <Text style={styles.textFooter}>Email</Text>
                 {/* UserName */}
                 <View style={styles.action}>
                     <FontAwesome
@@ -158,6 +170,7 @@ export default function SignIn({navigation}) {
                         autoCapitalize='none'
                         onChangeText={(val) => textInputChange(val)}
                         onEndEditing={(e) => handleValidUser(e.nativeEvent.text)}
+                        
                     />
                     {data.checkTextInputChange ?
                         <Animatable.View
@@ -194,7 +207,7 @@ export default function SignIn({navigation}) {
                         secureTextEntry={data.secureTextEntry ? true : false}
                         style={styles.textInput}
                         autoCapitalize='none'
-                       // onChangeText={(val)=>handlePasswordChange(val)}
+                       onChangeText={(val)=>handlePasswordChange(val)}
                     />
                     <TouchableOpacity
                         onPress={updateSecureEntry}
@@ -234,9 +247,7 @@ export default function SignIn({navigation}) {
                     <TouchableOpacity
                          onPress={
                             () => {SignIn();}}
-                            onPressIn={
-                                () =>{ navigation.navigate('Selection');}}
-
+                           
                         style={[styles.signin, {
                             backgroundColor: '#ff6b65',
                             borderColor:'#ff6b65',
