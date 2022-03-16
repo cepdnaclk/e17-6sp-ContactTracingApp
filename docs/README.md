@@ -131,6 +131,51 @@ System should be able to trace close contacts of an infected person.
 
 <img src = "images/uc-web.png" width="600">
 
+## Machine Learning Proposal
+
+### Communicable
+
+-Based on the covid infection,recovery and death counts prediction in trends are made   (Forecast)
+-Based on Geo-locations Hotspot identification and spreading rates are identified.
+-Based on bluetooth data cluster formation and spread of the cluster is predicted.
+
+### Non-Communicable
+
+-Based on the infected , recovered and death counts of specific locations the trend in spread is predicted
+
+## MACHINE LEARNING WORKFLOW
+
+
+<img src = "images/MLworkflow.png" width="600">
+
+
+### 1.Data Gathering
+
+#### Dataset : User details with covid status/CKDu status
+
+##### Communicable
+
+- GPS coordinates of the user gathered every 15 seconds.
+- Bluetooth UUIDs of the close contacts of the user.
+
+
+##### Non-Communicable
+- Locations of infected personals with infected recovered and death rates.
+
+#### Proposed Mode of Data Collection :
+
+Covid/CKDu status : Upon signing Up to the mobile app and routine questionnaires in case of close contact detection
+
+##### Communicable
+
+- Mobile Application collects the geo coordinates of the user in the foreground every 15 secs
+
+- Mobile App collects the Bluetooth UUIDs when another device with the app comes in close proximity
+
+##### Non-communicable
+
+- PHI updates the infected,recovered and death counts with locations on a certain routine.
+
 
 ## Links
 <!-- - [Project Page](https://cepdnaclk.github.io/e17-3yp) -->
