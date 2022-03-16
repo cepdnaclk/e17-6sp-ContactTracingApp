@@ -63,6 +63,10 @@ export const Register = () => {
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.currentTarget.value)} />
         </Form.Group>
+        <Form.Group controlId="formRegisterEmail">
+          <Form.Label>User ID</Form.Label>
+          <Form.Control type="ID" placeholder="Enter User ID"  />
+        </Form.Group>
         <Form.Group controlId="formRegisterPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Enter password" value={password} onChange={(p) => setPassword(p.currentTarget.value)}/>
