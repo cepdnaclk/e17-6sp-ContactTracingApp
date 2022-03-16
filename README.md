@@ -14,7 +14,7 @@ Title: CONTACT TRACING APP
 - [CONTACT TRACING APP](#CONTACT-TRACING-APP)
   - [Table of Contents](#table-of-contents)
   - [Problem Overview](#problem-overview)
-  - [Proposed System](#proposed-system)
+  - [Proposed System](#solution-overview)
   - [Team](#team)
   - [Links](#links)
 
@@ -63,6 +63,10 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 
 <img src = "docs/images/ckduOVERVIEW.png" width="600">
+
+## Solution Architecture
+
+<img src = "docs/images/SolutionArchitecture.png" width="600">
 
 ## Requirements
 
