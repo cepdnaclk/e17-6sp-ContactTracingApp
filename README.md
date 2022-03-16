@@ -77,22 +77,27 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 ### Functional Requirements
 
--Administrative functions -Authorities have to login before using the web application to track user details 
--User Authentication -Users have to register before using the mobile application
--Permissions-Users should allow the application to track GPS and Bluetooth data
--Features
-    -Users should update the covid status when the user is tested positive for the disease
-    -Alert notifications 
-    -User Questionnaires
+System should be able to trace close contacts of an infected person.
+
+- Mobile application
+    Should get gps and bluetooth tracking permission 
+    Should be able to display covid 19 and CKDu updates.
+    Should send alert notifications when risk detected
+    Should be able to get covid status through the app
+
+- Web app 
+    Should allow authorities to track user details
+    Should allow public users to check covid 19 and ckdu updates.
+
 
 ### Non-Functional Requirements
 
--Usability
--Responsive user friendly features
--Reliability
-    -Mobile application tracks user locations for every 15 seconds
--Performance
-    -Realtime updates of maps and charts
+- Usability
+    Responsive user friendly features
+- Reliability
+    Mobile application tracks user locations for every 15 seconds
+- Performance
+    Realtime updates of maps and charts
     
 ## UML Class Diagram
 
