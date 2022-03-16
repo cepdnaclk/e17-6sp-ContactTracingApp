@@ -80,14 +80,14 @@ users are alerted when they enter a high risk zone and predictions are made for 
 System should be able to trace close contacts of an infected person.
 
 - Mobile application
-    Should get gps and bluetooth tracking permission 
-    Should be able to display covid 19 and CKDu updates.
-    Should send alert notifications when risk detected
-    Should be able to get covid status through the app
+   -Should get gps and bluetooth tracking permission 
+   -Should be able to display covid 19 and CKDu updates.
+   -Should send alert notifications when risk detected
+   -Should be able to get covid status through the app
 
 - Web app 
-    Should allow authorities to track user details
-    Should allow public users to check covid 19 and ckdu updates.
+   -Should allow authorities to track user details
+   -Should allow public users to check covid 19 and ckdu updates.
 
 
 ### Non-Functional Requirements
