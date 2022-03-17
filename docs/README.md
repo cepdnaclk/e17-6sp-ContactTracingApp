@@ -20,27 +20,27 @@ title:
 
 ## Table of Contents
 
-  1. [Introduction](#1.introduction)
-  2. [Problem Overview](#2.problem-overview)
-  3. [Solution Overview](#3.solution-overview)
-  4. [Solution Architecture](#4.solution-architecture)
-  5. [Data Flow](#5.data-flow)
-  6. [Requirements Analysis](#6.requirements-analysis)
-  7. [UML Class Diagram](#7.uml-class-diagram)
-  8. [Use Case Diagrams](#8.use-case-diagrams)
-  9. [Machine Learning Proposal](#9.machine-learning-proposal)
-  10. [Machine Learning Workflow](#10.machine-learning-workflow)
+  1. [Introduction](#introduction)
+  2. [Problem Overview](#problem-overview)
+  3. [Solution Overview](#solution-overview)
+  4. [Solution Architecture](#solution-architecture)
+  5. [Data Flow](#data-flow)
+  6. [Requirements Analysis](#requirements-analysis)
+  7. [UML Class Diagram](#uml-class-diagram)
+  8. [Use Case Diagrams](#use-case-diagrams)
+  9. [Machine Learning Proposal](#machine-learning-proposal)
+  10. [Machine Learning Workflow](#machine-learning-workflow)
    - [Team](#team)
    - [Links](#links)
 
 ---
 
-## 1.Introduction
+## Introduction
 
 This is a contact tracing mobile application along with a web application to trace the the close contacts of covid 19 and chronic kidney disease infected persons.
 GPS and Bluetooth technologies will be used to trace the contacts
 
-## 2.Problem Overview
+## Problem Overview
 PROBLEMS RELATED WITH COVID-19 ( Communicable disease )
 
 - Inefficiency to trace the close contacts of an infected person manually.
@@ -58,9 +58,9 @@ PROBLEMS RELATED WITH Chronic Kidney Disease/CKDu  ( Non-Communicable)
 As a solution, we are proposing to build  a contact tracing mobile application as well as a web application.
 We are planing to use both bluetooth and GPS to track down the contacts of the infected person.
 
-## 3.Solution Overview
+## Solution Overview
 
-### 3.1.COVID19
+### COVID19
 
 To trace the close contacts Bluetooth is used.
 
@@ -77,7 +77,7 @@ To track the whereabouts (History of the locations visited) of the infected pers
 Using this GPS data, a proper dataset is created. Then this data set will be processed using data mining and machine learning techniques to provide the users with HIGH RISK ZONES on a map , Future predictions of the spread of the disease.
 
 
-### 3.2.Chronic kidney disease
+### Chronic kidney disease
 
 Data of the infected people are uploaded by the health officials.
 This dataset is then subjected to data mining and using machine learning techniques,
@@ -86,12 +86,12 @@ users are alerted when they enter a high risk zone and predictions are made for 
 
 <img src = "images/ckduOVERVIEW.png" width="600">
 
-## 4.Solution Architecture
+## Solution Architecture
 
 <img src = "images/SolutionArchitecture.png" width="600">
 
 
-## 5.Data Flow
+## Data Flow
 
 <img src = "images/dataflow.png" width="600">
 
@@ -108,9 +108,9 @@ users are alerted when they enter a high risk zone and predictions are made for 
 <img src = "images/web-gif.gif" width="1000" height="500">
 
 
-## 6.Requirements Analysis
+## Requirements Analysis
 
-### 6.1.Functional Requirements
+### Functional Requirements
 
 System should be able to trace close contacts of an infected person.
 
@@ -125,7 +125,7 @@ System should be able to trace close contacts of an infected person.
    - Should allow public users to check covid 19 and ckdu updates.
 
 
-### 6.2.Non-Functional Requirements
+### Non-Functional Requirements
 
 #### Usability
 - Responsive user friendly UI
@@ -137,22 +137,22 @@ System should be able to trace close contacts of an infected person.
 - Realtime updates of maps and charts
 
     
-## 7.UML Class Diagram
+## UML Class Diagram
 
 <img src = "images/UMLC.png" width="600" >
 
 
-## 8.Use case Diagrams
+## Use case Diagrams
 
-### 8.1.Mobile app
+### Mobile app
 
 <img src = "images/uc-app.png" width="600">
 
-### 8.2.Web app
+### Web app
 
 <img src = "images/uc-web.png" width="600">
 
-## 9.Machine Learning Proposal
+## Machine Learning Proposal
 
 ### Communicable
 
@@ -164,7 +164,7 @@ System should be able to trace close contacts of an infected person.
 
 -Based on the infected , recovered and death counts of specific locations the trend in spread is predicted
 
-## 10.MACHINE LEARNING WORKFLOW
+## MACHINE LEARNING WORKFLOW
 
 
 <img src = "images/MLworkflow.png" width="600">
