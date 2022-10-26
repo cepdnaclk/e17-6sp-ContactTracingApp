@@ -135,6 +135,9 @@ System should be able to trace close contacts of an infected person.
 <img src = "docs/images/1.png" width="600">
 <img src = "docs/images/2.png" width="600">
 <img src = "docs/images/3.png" width="600">
+<img src = "docs/images/ML model1.png" width="600">
+<img src = "docs/images/Mlmodel2.png" width="600">
+<img src = "docs/images/Ml model 3.png" width="600">
 <img src = "docs/images/4.png" width="600">
 
 
